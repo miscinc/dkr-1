@@ -5,9 +5,9 @@ services:
     env_file:
       - .env
     profiles: ["exclude-from-up"]
-    #volumes:
-      #- ./auto_gpt_workspace:/app/auto_gpt_workspace
-      #- ./data:/app/data
+    volumes:
+      - ./auto_gpt_workspace:/app/auto_gpt_workspace
+      - ./data:/app/data
       ## allow auto-gpt to write logs to disk
       # - ./logs:/app/logs
       ## uncomment following lines if you want to make use of these files
